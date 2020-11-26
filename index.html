@@ -1,49 +1,570 @@
 <!DOCTYPE html>
-<html style="background-color: rgb(0,0,0);">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Hank Orion - Director, Producer, YouTube</title>
-    <meta property="og:image" content="hank orion filmmaker ">
-    <meta name="description" content="Hank Orion is a writer and director known for Despair (2017), The Job (2017), Honey And Wine (2020), and The Boy With A Knife (2020). He migrated to Italy from Ukraine with his mother at the age of 9. Studied painting at the Liceo Artistico Statale "Foiso Fois" in Cagliari, Italy. In 2016 Hank founded Endeavour Filmworks Entertainment in London, which now became H.O. Releasing.">
-    <meta property="og:type" content="hank orion">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=62f63b7a7697c451b5421f5817b78e5c">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css?h=480fd14c1898f183c44cadfaeece94f4">
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Hank Orion</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    background-color: #000000;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #000000;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #000000 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
 </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="/index.html" style="font-size: 41px;">HANK ORION</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div
-                class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/about.html">About ME</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact.html">SOCIAL</a></li>
-                    <li class="nav-item" role="presentation"></li>
-                </ul>
-        </div>
-        </div>
-    </nav>
-    <header class="masthead" style="background-image: url(&quot;/assets/img/33900782_1418622771572649_195805390066155520_o.jpg?h=0e88c465acc04361ad1cf5d26cd54866&quot;);height: 100%;opacity: 1;width: 100%;margin: 0;">
-        <div class="overlay" style="opacity: 0;height: 100%;"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="site-heading" style="height: 100%;width: 100%;">
-                        <h1 style="margin: 102px;padding: 0;font-size: 72px;margin-top: 250px;">DO MORE</h1><span class="subheading" style="margin: -76px;">YouTube | Film | Art</span></div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/script.min.js?h=33575e8ad7d7046f302391200daded24"></script>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">HANK ORION</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#other">Other Work</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Image -->
+<img style="width:100%;" id="image" src="img/main.jpg">
+<!-- end -->
+
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Life is a journey</h2><br>
+      <h4>Hello stranger! I'm Hank. Most likely if you're visiting this website then you're a filmmaker, so good for you. Or maybe you just like my work or curious who I am. I'm a filmmaker, screenwriter, author, and YouTuber. I'm also the founder of H.O. Releasing, London based independent film production and distribution company. I was born in Ukraine, grew up in Italy, and now live between Londo, Los Angeles, Singapore, and Bangkok. Yeah I know right?! That's crazy. So is life my friend. Life is a journey, and I would love to invite you to follow mine. Below are my social media links where I put my content and share my life. Follow me.</h4><br>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/me.jpg" alt="Paris" width="400" height="300">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/me2.jpg" alt="Paris" width="400" height="300">
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <h2>My Journey</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div> -->
+
+<!-- Container (Movies Section) -->
+<div id="movies" class="container-fluid text-center">
+  <h2>MOVIES</h2>
+  <!-- <h4>Here's what I did</h4> -->
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <!-- <a href="https://www.w3schools.com"> -->
+        <img border="0" alt="W3Schools" src="img/honeyposter.jpg" width="100" height="100">
+        </a>
+      </div>
+      <!-- <p><strong>Honey And Wine</strong></p> -->
+      <!-- <a href="url">Watch it</a> -->
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <a href="https://www.amazon.com/dp/B0785XRQJ1/">
+        <img border="0" alt="W3Schools" src="img/jobposter.jpg" width="100" height="100">
+        </a>
+      </div>
+      <!-- <p><strong>The Job</strong></p> -->
+      <!-- <a href="url">Watch it</a> -->
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <a href="https://www.amazon.com/dp/B06XWJFM6Q">
+        <img border="0" alt="W3Schools" src="img/despairposter.jpg" width="100" height="100">
+        </a>
+      </div>
+      <!-- <p><strong>Despair</strong></p>
+      <a href="url">Watch it</a> -->
+    </div>
+  </div>
+  <br><br>
+    <!-- <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/me.jpg" alt="Paris" width="400" height="300">
+      </div>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div> -->
+    <!-- <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/me.jpg" alt="Paris" width="400" height="300">
+      </div>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div> -->
+  </div>
+</div>
+
+<!-- Container (Books Section) -->
+<div id="books" class="container-fluid text-center">
+  <h2>BOOKS</h2>
+  <!-- <h4>Here's what I did</h4> -->
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <a href="https://www.amazon.com/dp/B08KWJ76B5">
+        <img border="0" alt="W3Schools" src="img/zerodollar.jpg" width="100" height="100">
+        </a>
+      </div>
+      <!-- <p><strong>Honey And Wine</strong></p> -->
+      <!-- <a href="url">Watch it</a> -->
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <a href="https://www.amazon.com/dp/1977022502">
+        <img border="0" alt="W3Schools" src="img/guide.jpg" width="100" height="100">
+        </a>
+      </div>
+      <!-- <p><strong>The Job</strong></p> -->
+      <!-- <a href="url">Watch it</a> -->
+    </div>
+    <!-- <div class="col-sm-4">
+      <div class="thumbnail">
+        <a href="https://www.w3schools.com">
+        <img border="0" alt="W3Schools" src="img/despairposter.jpg" width="100" height="100">
+        </a>
+      </div>
+    </div> -->
+  </div>
+  <br><br>
+    <!-- <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/me.jpg" alt="Paris" width="400" height="300">
+      </div>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div> -->
+    <!-- <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/me.jpg" alt="Paris" width="400" height="300">
+      </div>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div> -->
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="other" class="container-fluid">
+  <div class="text-center">
+    <h2>Other Stuff I do</h2>
+    <br>
+    <!-- <h4>Choose a payment plan that works for you</h4> -->
+    <div class="col-sm-6">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLTaJcFmuHZ0c71eWjPlyoVDciVqR7UMff" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="col-sm-6">
+  <h2>Daily Vlogs</h2>
+  <h4>For me YouTube is a place where I can share my journey with the world. Subscribe.</h4>
+</div>
+  </div>
+</div>
+
+<div id="other" class="container-fluid">
+  <div class="text-center">
+    <!-- <h4>Choose a payment plan that works for you</h4> -->
+    <div class="col-sm-5">
+      <h2>Hank Orion Podcast</h2>
+      <h4>New podcasts every Tuesday where we will be talking about filmmaking and more with special guests on the show.</h4>
+    </div>
+    <div class="col-sm-5">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLVTzr44GAMBDfRvoGiUvVXPiSAI4eUVOB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div id="connect" class="container-fluid bg-grey">
+  <h2 class="text-center">Connect</h2>
+  <!-- Test -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/HankOrion" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com/HankOrion" class="fa fa-twitter"></a>
+<!-- <a href="#" class="fa fa-google"></a> -->
+<!-- <a href="#" class="fa fa-linkedin"></a> -->
+<a href="https://www.youtube.com/c/HankOrionYT" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/HankOrion" class="fa fa-instagram"></a>
+<!-- end -->
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.fa:hover {
+    opacity: 0;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+</style>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
 </body>
-
 </html>
