@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: hankorion.com
-Token: 4fffc5139f9aae4af7e9ef97d7d5cb5016c9b6d8260dae61d1996ded6056b94b
